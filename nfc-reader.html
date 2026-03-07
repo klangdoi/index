@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Reader - KLANGDOI GARDEN</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a472a, #2d5a3f);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .header {
+            background: linear-gradient(135deg, #1a472a, #2d5a3f);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 { font-size: 1.8em; margin-bottom: 5px; }
+        .header p { opacity: 0.9; font-size: 0.9em; }
+        
+        .status {
+            background: #e8f5e9;
+            color: #1a472a;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .status.waiting { background: #fff3cd; color: #856404; }
+        .status.success { background: #d4edda; color: #155724; }
+        
+        .buttons {
+            display: flex;
+            gap: 10px;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        .buttons button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-read { background: #1a472a; color: white; }
+        .btn-write { background: #2e7d32; color: white; }
+        
+        .last-scan {
+            padding: 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        .last-scan .label { color: #666; font-size: 0.9em; }
+        .last-scan .value { 
+            font-size: 1.5em; 
+            font-weight: bold; 
+            color: #1a472a;
+            font-family: monospace;
+            margin-top: 5px;
+        }
+        
+        .history {
+            padding: 15px;
+        }
+        .history h3 {
+            color: #1a472a;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .history-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        .history-item .tag { font-family: monospace; color: #1a472a; }
+        .history-item .time { color: #999; font-size: 0.85em; }
+        
+        .clear-btn {
+            display: block;
+            width: calc(100% - 30px);
+            margin: 10px 15px 15px;
+            padding: 10px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        .footer {
+            background: #1a472a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.8em;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 NFC Reader</h1>
+            <p>KLANGDOI GARDEN</p>
+        </div>
+        
+        <div class="status waiting" id="status">
+            ⚠️ กดปุ่ม "เริ่มอ่าน" เพื่อสแกน NFC
+        </div>
+        
+        <div class="buttons">
+            <button class="btn-read" onclick="startScan()">📖 เริ่มอ่าน</button>
+            <button class="btn-write" onclick="showWriteDialog()">📝 เขียนข้อมูล</button>
+        </div>
+        
+        <div class="last-scan">
+            <div class="label">สแกนล่าสุด</div>
+            <div class="value" id="lastTag">-</div>
+        </div>
+        
+        <div class="history">
+            <h3>📋 ประวัติการสแกน (<span id="count">0</span>)</h3>
+            <div class="history-list" id="historyList"></div>
+        </div>
+        
+        <button class="clear-btn" onclick="clearHistory()">🗑️ ล้างประวัติ</button>
+        
+        <div class="footer">
+            For personal use only • ห้ามจำหน่าย ห้ามแจก
+        </div>
+    </div>
+
+    <script>
+        let nfcAdapter = null;
+        let isScanning = false;
+        
+        // โหลดประวัติจาก localStorage
+        let history = JSON.parse(localStorage.getItem('nfcHistory') || '[]');
+        
+        // ตรวจสอบ NFC
+        async function initNFC() {
+            if ('NDEFReader' in window) {
+                try {
+                    nfcAdapter = new NDEFReader();
+                    updateStatus('✅พร้อมใช้งาน - กด "เริ่มอ่าน" เพื่อสแกน', 'success');
+                    return true;
+                } catch (e) {
+                    updateStatus('❌ NFC ไม่พร้อม: ' + e.message, 'waiting');
+                    return false;
+                }
+            } else {
+                updateStatus('❌ เบราว์เซอร์ไม่รองรับ NFC', 'waiting');
+                return false;
+            }
+        }
+        
+        function updateStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status ' + type;
+        }
+        
+        async function startScan() {
+            if (!nfcAdapter) {
+                await initNFC();
+            }
+            
+            if (!nfcAdapter) {
+                alert('เบราว์เซอร์ไม่รองรับ NFC หรือไม่พร้อมใช้งาน');
+                return;
+            }
+            
+            try {
+                updateStatus('🔄 กำลังรอสแกน NFC...', 'waiting');
+                
+                nfcAdapter.scan().then(() => {
+                    isScanning = true;
+                    updateStatus('✅ กำลังรอ - แตะ NFC Tag', 'success');
+                    
+                    nfcAdapter.onreading = (event) => {
+                        const tagId = bytesToHex(event.serialNumber);
+                        document.getElementById('lastTag').textContent = tagId;
+                        
+                        // บันทึกประวัติ
+                        addToHistory(tagId);
+                        updateStatus('✅ สแกนสำเร็จ: ' + tagId, 'success');
+                    };
+                }).catch(err => {
+                    updateStatus('❌ ข้อผิดพลาด: ' + err.message, 'waiting');
+                });
+            } catch (e) {
+                updateStatus('❌ ข้อผิดพลาด: ' + e.message, 'waiting');
+            }
+        }
+        
+        function showWriteDialog() {
+            const message = prompt('ใส่ข้อความที่ต้องการเขียนลง NFC Tag:');
+            if (message) {
+                writeNFC(message);
+            }
+        }
+        
+        async function writeNFC(message) {
+            if (!nfcAdapter) {
+                await initNFC();
+            }
+            
+            try {
+                updateStatus('🔄 กำลังเขียน...', 'waiting');
+                
+                await nfcAdapter.write(message).then(() => {
+                    updateStatus('✅ เขียนสำเร็จ: ' + message, 'success');
+                    addToHistory('WRITE: ' + message);
+                }).catch(err => {
+                    updateStatus('❌ เขียนล้มเหลว: ' + err.message, 'waiting');
+                });
+            } catch (e) {
+                updateStatus('❌ ข้อผิดพลาด: ' + e.message, 'waiting');
+            }
+        }
+        
+        function bytesToHex(bytes) {
+            return Array.from(bytes)
+                .map(b => b.toString(16).padStart(2, '0').toUpperCase())
+                .join('');
+        }
+        
+        function addToHistory(tagId) {
+            const item = {
+                tag: tagId,
+                time: new Date().toLocaleString('th-TH')
+            };
+            history.unshift(item);
+            
+            // เก็บไว้สูงสุด 100 รายการ
+            if (history.length > 100) {
+                history = history.slice(0, 100);
+            }
+            
+            localStorage.setItem('nfcHistory', JSON.stringify(history));
+            renderHistory();
+        }
+        
+        function renderHistory() {
+            const list = document.getElementById('historyList');
+            document.getElementById('count').textContent = history.length;
+            
+            list.innerHTML = history.map((item, index) => 
+                '<div class="history-item">' +
+                    '<span class="tag">#' + (index + 1) + ' ' + item.tag + '</span>' +
+                    '<span class="time">' + item.time + '</span>' +
+                '</div>'
+            ).join('');
+        }
+        
+        function clearHistory() {
+            if (confirm('ต้องการล้างประวัติทั้งหมด?')) {
+                history = [];
+                localStorage.removeItem('nfcHistory');
+                renderHistory();
+                document.getElementById('lastTag').textContent = '-';
+                updateStatus('✅ ล้างประวัติแล้ว', 'success');
+            }
+        }
+        
+        // เริ่มต้น
+        initNFC();
+        renderHistory();
+    </script>
+</body>
+</html>
