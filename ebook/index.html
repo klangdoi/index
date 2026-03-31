@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook Pro</title>
+    <title>Ebook Spread</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -15,17 +15,12 @@
     </style>
 </head>
 
-<body class="text-white p-4 max-w-3xl mx-auto">
+<body class="text-white p-4 max-w-4xl mx-auto">
 
-    <h1 class="text-2xl font-bold mb-2">📚 Klangdoi Fig Ebook / สวนกลางดอยคลังความรู้ 📚</h1>
-    <p class="text-gray-400 mb-4">เลือกสายพันธุ์เพื่ออ่าน / ห้ามจำหน่ายเพื่อความรู้ฟรี</p>
+    <h1 class="text-2xl font-bold mb-2">📚 Fig Ebook</h1>
 
     <input id="search" placeholder="ค้นหา..." class="w-full p-3 rounded-xl text-black mb-4" />
 
-    <!-- 🔤 A-Z -->
-    <div id="az" class="flex flex-wrap gap-2 mb-4 text-sm"></div>
-
-    <!-- 📋 List -->
     <div id="list" class="space-y-2"></div>
 
     <!-- 📖 Viewer -->
@@ -33,9 +28,11 @@
 
         <button onclick="closeBook()" class="absolute top-4 right-4 text-white text-xl">✕</button>
 
-        <button onclick="toggleFav()" class="absolute top-4 left-4 text-yellow-400 text-xl">★</button>
-
-        <img id="pageImg" class="max-w-full max-h-full object-contain transition-transform duration-200" />
+        <!-- 2 หน้า -->
+        <div class="flex gap-2 w-full max-w-5xl">
+            <img id="leftPage" class="w-1/2 object-contain bg-black" />
+            <img id="rightPage" class="w-1/2 object-contain bg-black" />
+        </div>
 
         <div id="pageNum" class="text-white mt-2"></div>
 
@@ -47,39 +44,50 @@
     </div>
 
     <script>
-        let data = [], filtered = [];
+        let rawData = [], data = [], filtered = [];
         let currentIndex = 0;
-        let zoom = 1;
-        let favs = JSON.parse(localStorage.getItem('favs') || '[]');
 
         // -------- LOAD --------
         fetch('books.json')
             .then(r => r.json())
             .then(j => {
-                data = j.map((item, i) => ({ ...item, id: i }));
+                rawData = j;
+
+                // 🔥 จับคู่ LEFT / RIGHT จากชื่อ
+                let map = {};
+
+                rawData.forEach(item => {
+                    let name = item.name.toUpperCase();
+                    let key = name.replace(' DETAIL', '').trim();
+
+                    if (!map[key]) {
+                        map[key] = { name: key, left: null, right: null };
+                    }
+
+                    if (name.includes('DETAIL')) {
+                        map[key].right = item.file;
+                    } else {
+                        map[key].left = item.file;
+                    }
+                });
+
+                data = Object.values(map);
+
                 filtered = data;
-
-                renderAZ();
                 render();
-
-                // จำหน้าล่าสุด
-                let last = localStorage.getItem('lastPage');
-                if (last) {
-                    openBook(parseInt(last));
-                }
             });
 
-        // -------- RENDER --------
+        // -------- LIST --------
         function render() {
             let list = document.getElementById('list');
             list.innerHTML = '';
 
-            filtered.forEach(it => {
+            filtered.forEach((it, i) => {
                 list.innerHTML += `
-      <div onclick="openBook(${it.id})"
+      <div onclick="openBook(${i})"
         class="p-3 bg-slate-800 rounded-xl cursor-pointer hover:bg-slate-700 flex">
         
-        <span class="text-gray-400 w-10">${it.id + 1}.</span>
+        <span class="text-gray-400 w-10">${i + 1}.</span>
         <span class="flex-1">${it.name}</span>
       </div>
     `;
@@ -95,62 +103,36 @@
             } else {
                 filtered = data.filter(x => {
                     let name = x.name.toLowerCase();
-                    return name.startsWith(q) || name.split('-').some(w => w.startsWith(q));
+                    return name.startsWith(q) || name.split(' ').some(w => w.startsWith(q));
                 });
             }
 
             render();
-        }
-
-        // -------- A-Z --------
-        function renderAZ() {
-            let az = document.getElementById('az');
-            let letters = [...new Set(data.map(x => x.name[0].toUpperCase()))];
-
-            az.innerHTML = '<button onclick="resetAZ()" class="px-2 py-1 bg-gray-600 rounded">All</button>';
-
-            letters.forEach(l => {
-                az.innerHTML += `
-      <button onclick="filterAZ('${l}')"
-        class="px-2 py-1 bg-slate-700 rounded">${l}</button>
-    `;
-            });
-        }
-
-        function filterAZ(letter) {
-            filtered = data.filter(x => x.name[0].toUpperCase() === letter);
-            render();
-        }
-
-        function resetAZ() {
-            filtered = data;
-            render();
-        }
+        };
 
         // -------- VIEWER --------
         function openBook(index) {
             currentIndex = index;
-            zoom = 1;
-
             document.getElementById('viewer').classList.remove('hidden');
             showPage();
         }
 
         function showPage() {
-            let img = document.getElementById('pageImg');
-            img.src = data[currentIndex].file;
-            img.style.transform = `scale(${zoom})`;
+            let left = document.getElementById('leftPage');
+            let right = document.getElementById('rightPage');
+
+            let page = data[currentIndex];
+
+            left.src = page.left || '';
+            right.src = page.right || '';
 
             document.getElementById('pageNum').innerText =
                 (currentIndex + 1) + ' / ' + data.length;
-
-            localStorage.setItem('lastPage', currentIndex);
         }
 
         function nextPage() {
             if (currentIndex < data.length - 1) {
                 currentIndex++;
-                zoom = 1;
                 showPage();
             }
         }
@@ -158,44 +140,12 @@
         function prevPage() {
             if (currentIndex > 0) {
                 currentIndex--;
-                zoom = 1;
                 showPage();
             }
         }
 
         function closeBook() {
             document.getElementById('viewer').classList.add('hidden');
-        }
-
-        // -------- SWIPE --------
-        let startX = 0;
-        const img = document.getElementById('pageImg');
-
-        img.addEventListener('touchstart', e => {
-            startX = e.touches[0].clientX;
-        });
-
-        img.addEventListener('touchend', e => {
-            let endX = e.changedTouches[0].clientX;
-
-            if (startX - endX > 50) nextPage();
-            else if (endX - startX > 50) prevPage();
-        });
-
-        // -------- ZOOM --------
-        img.addEventListener('click', () => {
-            zoom = zoom === 1 ? 2 : 1;
-            img.style.transform = `scale(${zoom})`;
-        });
-
-        // -------- FAVORITE --------
-        function toggleFav() {
-            if (favs.includes(currentIndex)) {
-                favs = favs.filter(x => x !== currentIndex);
-            } else {
-                favs.push(currentIndex);
-            }
-            localStorage.setItem('favs', JSON.stringify(favs));
         }
     </script>
 

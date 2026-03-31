@@ -1,55 +1,111 @@
 [
   {
+    "name": "ALACANTINA DETAIL",
+    "file": "images/ALACANTINA DETAIL.JPG"
+  },
+  {
+    "name": "ALACANTINA NEGRA DETAIL",
+    "file": "images/ALACANTINA NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "ALACANTINA NEGRA",
+    "file": "images/ALACANTINA NEGRA.jpg"
+  },
+  {
     "name": "ALACANTINA",
     "file": "images/ALACANTINA.jpg"
   },
   {
-    "name": "ALACANTINA_NEGRA",
-    "file": "images/ALACANTINA_NEGRA.jpg"
+    "name": "ALBACOR BLANCA DETAIL",
+    "file": "images/ALBACOR BLANCA DETAIL.JPG"
+  },
+  {
+    "name": "ALBACOR BLANCA",
+    "file": "images/ALBACOR BLANCA.jpg"
+  },
+  {
+    "name": "ALBACOR COMUNA DETAIL",
+    "file": "images/ALBACOR COMUNA DETAIL.JPG"
+  },
+  {
+    "name": "ALBACOR COMUNA",
+    "file": "images/ALBACOR COMUNA.jpg"
+  },
+  {
+    "name": "ALBACOR DE MOLLA BLANCA DETAIL",
+    "file": "images/ALBACOR DE MOLLA BLANCA DETAIL.JPG"
+  },
+  {
+    "name": "ALBACOR DE MOLLA BLANCA",
+    "file": "images/ALBACOR DE MOLLA BLANCA.jpg"
+  },
+  {
+    "name": "ALBACOR DE MOLLA DE MELO DETAIL",
+    "file": "images/ALBACOR DE MOLLA DE MELO DETAIL.JPG"
+  },
+  {
+    "name": "ALBACOR DE MOLLA DE MELO",
+    "file": "images/ALBACOR DE MOLLA DE MELO.jpg"
+  },
+  {
+    "name": "ALBACOR DE MOLLA VERMELLA DETAIL",
+    "file": "images/ALBACOR DE MOLLA VERMELLA DETAIL.JPG"
+  },
+  {
+    "name": "ALBACOR DE MOLLA VERMELLA",
+    "file": "images/ALBACOR DE MOLLA VERMELLA.jpg"
+  },
+  {
+    "name": "ALBACOR DETAIL",
+    "file": "images/ALBACOR DETAIL.JPG"
   },
   {
     "name": "ALBACOR",
     "file": "images/ALBACOR.jpg"
   },
   {
-    "name": "ALBACOR_BLANC",
-    "file": "images/ALBACOR_BLANC.jpg"
-  },
-  {
-    "name": "ALBACOR_COMUNA",
-    "file": "images/ALBACOR_COMUNA.jpg"
-  },
-  {
-    "name": "ALBACOR_DE_MOLLA_BLANCA",
-    "file": "images/ALBACOR_DE_MOLLA_BLANCA.jpg"
-  },
-  {
-    "name": "ALBACOR_DE_MOLLA_DE_MELO",
-    "file": "images/ALBACOR_DE_MOLLA_DE_MELO.jpg"
-  },
-  {
-    "name": "ALBACOR_DE_MOLLA_VERMELLA",
-    "file": "images/ALBACOR_DE_MOLLA_VERMELLA.jpg"
+    "name": "ALENYANA DETAIL",
+    "file": "images/ALENYANA DETAIL.JPG"
   },
   {
     "name": "ALENYANA",
     "file": "images/ALENYANA.jpg"
   },
   {
+    "name": "ALGERINA BLANCA DETAIL",
+    "file": "images/ALGERINA BLANCA DETAIL.JPG"
+  },
+  {
+    "name": "ALGERINA BLANCA",
+    "file": "images/ALGERINA BLANCA.jpg"
+  },
+  {
+    "name": "ALGERINA DETAIL",
+    "file": "images/ALGERINA DETAIL.JPG"
+  },
+  {
     "name": "ALGERINA",
     "file": "images/ALGERINA.jpg"
   },
   {
-    "name": "ALGERINA_BLANCA",
-    "file": "images/ALGERINA_BLANCA.jpg"
+    "name": "ANDREVA DETAIL",
+    "file": "images/ANDREVA DETAIL.JPG"
   },
   {
     "name": "ANDREVA",
     "file": "images/ANDREVA.jpg"
   },
   {
+    "name": "BALAFI DETAIL",
+    "file": "images/BALAFI DETAIL.JPG"
+  },
+  {
     "name": "BALAFI",
     "file": "images/BALAFI.jpg"
+  },
+  {
+    "name": "BANYOLS DETAIL",
+    "file": "images/BANYOLS DETAIL.JPG"
   },
   {
     "name": "BANYOLS",
@@ -60,48 +116,100 @@
     "file": "images/BBONJESUSA.jpg"
   },
   {
-    "name": "BEAT_RAMON",
-    "file": "images/BEAT_RAMON.jpg"
+    "name": "BEAT RAMON DETAIL",
+    "file": "images/BEAT RAMON DETAIL.JPG"
   },
   {
-    "name": "BEC_DE_PERDIU",
-    "file": "images/BEC_DE_PERDIU.jpg"
+    "name": "BEAT RAMON",
+    "file": "images/BEAT RAMON.jpg"
+  },
+  {
+    "name": "BEC DE PERDIU DETAIL",
+    "file": "images/BEC DE PERDIU DETAIL.JPG"
+  },
+  {
+    "name": "BEC DE PERDIU",
+    "file": "images/BEC DE PERDIU.jpg"
+  },
+  {
+    "name": "BEL COLL DETAIL",
+    "file": "images/BEL COLL DETAIL.JPG"
+  },
+  {
+    "name": "BEL COLL",
+    "file": "images/BEL COLL.jpg"
+  },
+  {
+    "name": "BELTRANA DETAIL",
+    "file": "images/BELTRANA DETAIL.JPG"
   },
   {
     "name": "BELTRANA",
     "file": "images/BELTRANA.jpg"
   },
   {
-    "name": "BEL_COLL",
-    "file": "images/BEL_COLL.jpg"
+    "name": "BERGUNYA DETAIL",
+    "file": "images/BERGUNYA DETAIL.JPG"
   },
   {
     "name": "BERGUNYA",
     "file": "images/BERGUNYA.jpg"
   },
   {
+    "name": "BERMESCA DETAIL",
+    "file": "images/BERMESCA DETAIL.JPG"
+  },
+  {
     "name": "BERMESCA",
     "file": "images/BERMESCA.jpg"
+  },
+  {
+    "name": "BLANCA CLARA DETAIL",
+    "file": "images/BLANCA CLARA DETAIL.JPG"
+  },
+  {
+    "name": "BLANCA CLARA",
+    "file": "images/BLANCA CLARA.jpg"
+  },
+  {
+    "name": "BLANCAFLOR DETAIL",
+    "file": "images/BLANCAFLOR DETAIL.JPG"
   },
   {
     "name": "BLANCAFLOR",
     "file": "images/BLANCAFLOR.jpg"
   },
   {
-    "name": "BLANCA_CLARA",
-    "file": "images/BLANCA_CLARA.jpg"
+    "name": "BLANQUELLA DETAIL",
+    "file": "images/BLANQUELLA DETAIL.JPG"
   },
   {
     "name": "BLANQUELLA",
     "file": "images/BLANQUELLA.jpg"
   },
   {
+    "name": "BLAVA DETAIL",
+    "file": "images/BLAVA DETAIL.JPG"
+  },
+  {
+    "name": "BLAVA FLOR DETAIL",
+    "file": "images/BLAVA FLOR DETAIL.JPG"
+  },
+  {
+    "name": "BLAVA FLOR",
+    "file": "images/BLAVA FLOR.jpg"
+  },
+  {
     "name": "BLAVA",
     "file": "images/BLAVA.jpg"
   },
   {
-    "name": "BLAVA_FLOR",
-    "file": "images/BLAVA_FLOR.jpg"
+    "name": "BLAVETA DETAIL",
+    "file": "images/BLAVETA DETAIL.JPG"
+  },
+  {
+    "name": "BLAVETA-1 DETAIL",
+    "file": "images/BLAVETA-1 DETAIL.JPG"
   },
   {
     "name": "BLAVETA-1",
@@ -112,496 +220,1000 @@
     "file": "images/BLAVETA.jpg"
   },
   {
-    "name": "BORDA_BARRAQUER",
-    "file": "images/BORDA_BARRAQUER.jpg"
+    "name": "BORDA BARRAQUER DETAIL",
+    "file": "images/BORDA BARRAQUER DETAIL.JPG"
   },
   {
-    "name": "BORDA_DE_SES_ROTES",
-    "file": "images/BORDA_DE_SES_ROTES.jpg"
+    "name": "BORDA BARRAQUER",
+    "file": "images/BORDA BARRAQUER.jpg"
   },
   {
-    "name": "BORDISSOT_BLANCA",
-    "file": "images/BORDISSOT_BLANCA.jpg"
+    "name": "BORDA DE SES ROTES DETAIL",
+    "file": "images/BORDA DE SES ROTES DETAIL.JPG"
   },
   {
-    "name": "BORDISSOT_BLANCANEGRA",
-    "file": "images/BORDISSOT_BLANCANEGRA.jpg"
+    "name": "BORDA DE SES ROTES",
+    "file": "images/BORDA DE SES ROTES.jpg"
   },
   {
-    "name": "BORDISSOT_BLANCA_RIMADA",
-    "file": "images/BORDISSOT_BLANCA_RIMADA.jpg"
+    "name": "BORDISSOT BLANCA DETAIL",
+    "file": "images/BORDISSOT BLANCA DETAIL.JPG"
   },
   {
-    "name": "BORDISSOT_NEGRA",
-    "file": "images/BORDISSOT_NEGRA.jpg"
+    "name": "BORDISSOT BLANCA RIMADA DETAIL",
+    "file": "images/BORDISSOT BLANCA RIMADA DETAIL.JPG"
   },
   {
-    "name": "BORDISSOT_NEGRA_DE_COLL_LLARG",
-    "file": "images/BORDISSOT_NEGRA_DE_COLL_LLARG.jpg"
+    "name": "BORDISSOT BLANCA RIMADA",
+    "file": "images/BORDISSOT BLANCA RIMADA.jpg"
   },
   {
-    "name": "BORDISSOT_NEGRA_RIMADA",
-    "file": "images/BORDISSOT_NEGRA_RIMADA.jpg"
+    "name": "BORDISSOT BLANCA",
+    "file": "images/BORDISSOT BLANCA.jpg"
   },
   {
-    "name": "BORDISSOT_ROSSA",
-    "file": "images/BORDISSOT_ROSSA.jpg"
+    "name": "BORDISSOT BLANCANEGRA DETAIL",
+    "file": "images/BORDISSOT BLANCANEGRA DETAIL.JPG"
   },
   {
-    "name": "BORDISSOT_VERDA",
-    "file": "images/BORDISSOT_VERDA.jpg"
+    "name": "BORDISSOT BLANCANEGRA",
+    "file": "images/BORDISSOT BLANCANEGRA.jpg"
+  },
+  {
+    "name": "BORDISSOT DETAIL",
+    "file": "images/BORDISSOT DETAIL.JPG"
+  },
+  {
+    "name": "BORDISSOT NEGRA DE COLL LLARG DETAIL",
+    "file": "images/BORDISSOT NEGRA DE COLL LLARG DETAIL.JPG"
+  },
+  {
+    "name": "BORDISSOT NEGRA DE COLL LLARG",
+    "file": "images/BORDISSOT NEGRA DE COLL LLARG.jpg"
+  },
+  {
+    "name": "BORDISSOT NEGRA DETAIL",
+    "file": "images/BORDISSOT NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "BORDISSOT NEGRA RIMADA DETAIL",
+    "file": "images/BORDISSOT NEGRA RIMADA DETAIL.JPG"
+  },
+  {
+    "name": "BORDISSOT NEGRA RIMADA",
+    "file": "images/BORDISSOT NEGRA RIMADA.jpg"
+  },
+  {
+    "name": "BORDISSOT NEGRA",
+    "file": "images/BORDISSOT NEGRA.jpg"
+  },
+  {
+    "name": "BORDISSOT ROSSA DETAIL",
+    "file": "images/BORDISSOT ROSSA DETAIL.JPG"
+  },
+  {
+    "name": "BORDISSOT ROSSA",
+    "file": "images/BORDISSOT ROSSA.jpg"
+  },
+  {
+    "name": "BORDISSOT VERDA DETAIL",
+    "file": "images/BORDISSOT VERDA DETAIL.JPG"
+  },
+  {
+    "name": "BORDISSOT VERDA",
+    "file": "images/BORDISSOT VERDA.jpg"
+  },
+  {
+    "name": "BOTANDA DETAIL",
+    "file": "images/BOTANDA DETAIL.JPG"
   },
   {
     "name": "BOTANDA",
     "file": "images/BOTANDA.jpg"
   },
   {
+    "name": "BOTILENCA DETAIL",
+    "file": "images/BOTILENCA DETAIL.JPG"
+  },
+  {
     "name": "BOTILENCA",
     "file": "images/BOTILENCA.jpg"
+  },
+  {
+    "name": "BROCALET DETAIL",
+    "file": "images/BROCALET DETAIL.JPG"
   },
   {
     "name": "BROCALET",
     "file": "images/BROCALET.jpg"
   },
   {
+    "name": "BUSCARETA DETAIL",
+    "file": "images/BUSCARETA DETAIL.JPG"
+  },
+  {
     "name": "BUSCARETA",
     "file": "images/BUSCARETA.jpg"
+  },
+  {
+    "name": "CALDERONA DE MINER DETAIL",
+    "file": "images/CALDERONA DE MINER DETAIL.JPG"
+  },
+  {
+    "name": "CALDERONA DE MINER",
+    "file": "images/CALDERONA DE MINER.jpg"
+  },
+  {
+    "name": "CALDERONA DETAIL",
+    "file": "images/CALDERONA DETAIL.JPG"
   },
   {
     "name": "CALDERONA",
     "file": "images/CALDERONA.jpg"
   },
   {
-    "name": "CALDERONA_DE_MINER",
-    "file": "images/CALDERONA_DE_MINER.jpg"
+    "name": "CAPOLL CURT DETAIL",
+    "file": "images/CAPOLL CURT DETAIL.JPG"
   },
   {
-    "name": "CAPOLL_CURT",
-    "file": "images/CAPOLL_CURT.jpg"
+    "name": "CAPOLL CURT NEGRA DETAIL",
+    "file": "images/CAPOLL CURT NEGRA DETAIL.JPG"
   },
   {
-    "name": "CAPOLL_CURT_NEGRA",
-    "file": "images/CAPOLL_CURT_NEGRA.jpg"
+    "name": "CAPOLL CURT NEGRA",
+    "file": "images/CAPOLL CURT NEGRA.jpg"
   },
   {
-    "name": "CAPOLL_LLARG",
-    "file": "images/CAPOLL_LLARG.jpg"
+    "name": "CAPOLL CURT",
+    "file": "images/CAPOLL CURT.jpg"
+  },
+  {
+    "name": "CAPOLL LLARG DETAIL",
+    "file": "images/CAPOLL LLARG DETAIL.JPG"
+  },
+  {
+    "name": "CAPOLL LLARG",
+    "file": "images/CAPOLL LLARG.jpg"
+  },
+  {
+    "name": "CARABASSETA DETAIL",
+    "file": "images/CARABASSETA DETAIL.JPG"
   },
   {
     "name": "CARABASSETA",
     "file": "images/CARABASSETA.jpg"
   },
   {
+    "name": "CARLINA DETAIL",
+    "file": "images/CARLINA DETAIL.JPG"
+  },
+  {
+    "name": "CARLINA NEGRA DETAIL",
+    "file": "images/CARLINA NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "CARLINA NEGRA",
+    "file": "images/CARLINA NEGRA.jpg"
+  },
+  {
     "name": "CARLINA",
     "file": "images/CARLINA.jpg"
   },
   {
-    "name": "CARLINA_NEGRA",
-    "file": "images/CARLINA_NEGRA.jpg"
+    "name": "COLL DE DAMA BLANCA DETAIL",
+    "file": "images/COLL DE DAMA BLANCA DETAIL.JPG"
   },
   {
-    "name": "COLL_DE_DAMA_BLANCA",
-    "file": "images/COLL_DE_DAMA_BLANCA.jpg"
+    "name": "COLL DE DAMA BLANCA NEGRA DETAIL",
+    "file": "images/COLL DE DAMA BLANCA NEGRA DETAIL.JPG"
   },
   {
-    "name": "COLL_DE_DAMA_BORDISSOTENCA",
-    "file": "images/COLL_DE_DAMA_BORDISSOTENCA.jpg"
+    "name": "COLL DE DAMA BLANCA NEGRA",
+    "file": "images/COLL DE DAMA BLANCA NEGRA.jpg"
   },
   {
-    "name": "COLL_DE_DAMA_DE_CIUTAT",
-    "file": "images/COLL_DE_DAMA_DE_CIUTAT.jpg"
+    "name": "COLL DE DAMA BLANCA",
+    "file": "images/COLL DE DAMA BLANCA.jpg"
   },
   {
-    "name": "COLL_DE_DAMA_GEGANTINA",
-    "file": "images/COLL_DE_DAMA_GEGANTINA.jpg"
+    "name": "COLL DE DAMA BORDISSOTENCA DETAIL",
+    "file": "images/COLL DE DAMA BORDISSOTENCA DETAIL.JPG"
   },
   {
-    "name": "COLL_DE_DAMA_NEGRA",
-    "file": "images/COLL_DE_DAMA_NEGRA.jpg"
+    "name": "COLL DE DAMA BORDISSOTENCA",
+    "file": "images/COLL DE DAMA BORDISSOTENCA.jpg"
   },
   {
-    "name": "COLL_DE_DAMA_RIMADA",
-    "file": "images/COLL_DE_DAMA_RIMADA.jpg"
+    "name": "COLL DE DAMA DE CIUTAT DETAIL",
+    "file": "images/COLL DE DAMA DE CIUTAT DETAIL.JPG"
   },
   {
-    "name": "COLL_DE_DAMA_ROJA",
-    "file": "images/COLL_DE_DAMA_ROJA.jpg"
+    "name": "COLL DE DAMA DE CIUTAT",
+    "file": "images/COLL DE DAMA DE CIUTAT.jpg"
   },
   {
-    "name": "COLL_DE_DRAMA_BLANCA-NEGRA",
-    "file": "images/COLL_DE_DRAMA_BLANCA-NEGRA.jpg"
+    "name": "COLL DE DAMA GEGANTINA DETAIL",
+    "file": "images/COLL DE DAMA GEGANTINA DETAIL.JPG"
   },
   {
-    "name": "COLL_DE_FRARE",
-    "file": "images/COLL_DE_FRARE.jpg"
+    "name": "COLL DE DAMA GEGANTINA",
+    "file": "images/COLL DE DAMA GEGANTINA.jpg"
   },
   {
-    "name": "CONSELLERA_NEGRA",
-    "file": "images/CONSELLERA_NEGRA.jpg"
+    "name": "COLL DE DAMA NEGRA DETAIL",
+    "file": "images/COLL DE DAMA NEGRA DETAIL.JPG"
   },
   {
-    "name": "COSME_MANYO",
-    "file": "images/COSME_MANYO.jpg"
+    "name": "COLL DE DAMA NEGRA",
+    "file": "images/COLL DE DAMA NEGRA.jpg"
+  },
+  {
+    "name": "COLL DE DAMA RIMADA DETAIL",
+    "file": "images/COLL DE DAMA RIMADA DETAIL.JPG"
+  },
+  {
+    "name": "COLL DE DAMA RIMADA",
+    "file": "images/COLL DE DAMA RIMADA.jpg"
+  },
+  {
+    "name": "COLL DE DAMA ROJA DETAIL",
+    "file": "images/COLL DE DAMA ROJA DETAIL.JPG"
+  },
+  {
+    "name": "COLL DE DAMA ROJA",
+    "file": "images/COLL DE DAMA ROJA.jpg"
+  },
+  {
+    "name": "COLL DE FRARE DETAIL",
+    "file": "images/COLL DE FRARE DETAIL.JPG"
+  },
+  {
+    "name": "COLL DE FRARE",
+    "file": "images/COLL DE FRARE.jpg"
+  },
+  {
+    "name": "CONSELLERA NEGRA DETAIL",
+    "file": "images/CONSELLERA NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "CONSELLERA NEGRA",
+    "file": "images/CONSELLERA NEGRA.jpg"
+  },
+  {
+    "name": "COSME MANYO DETAIL",
+    "file": "images/COSME MANYO DETAIL.JPG"
+  },
+  {
+    "name": "COSME MANYO",
+    "file": "images/COSME MANYO.jpg"
+  },
+  {
+    "name": "CUCURELLA DETAIL",
+    "file": "images/CUCURELLA DETAIL.JPG"
   },
   {
     "name": "CUCURELLA",
     "file": "images/CUCURELLA.jpg"
   },
   {
-    "name": "CUIRO_DE_BOU",
-    "file": "images/CUIRO_DE_BOU.jpg"
+    "name": "CUIRO DE BOU DETAIL",
+    "file": "images/CUIRO DE BOU DETAIL.JPG"
   },
   {
-    "name": "CUL_DE_COVE",
-    "file": "images/CUL_DE_COVE.jpg"
+    "name": "CUIRO DE BOU",
+    "file": "images/CUIRO DE BOU.jpg"
+  },
+  {
+    "name": "CUL DE COVE DETAIL",
+    "file": "images/CUL DE COVE DETAIL.JPG"
+  },
+  {
+    "name": "CUL DE COVE",
+    "file": "images/CUL DE COVE.jpg"
+  },
+  {
+    "name": "DE BOU DETAIL",
+    "file": "images/DE BOU DETAIL.JPG"
+  },
+  {
+    "name": "DE BOU",
+    "file": "images/DE BOU.jpg"
+  },
+  {
+    "name": "DE CABRERA DETAIL",
+    "file": "images/DE CABRERA DETAIL.JPG"
+  },
+  {
+    "name": "DE CABRERA",
+    "file": "images/DE CABRERA.jpg"
+  },
+  {
+    "name": "DE LA CASETA DETAIL",
+    "file": "images/DE LA CASETA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA CASETA",
+    "file": "images/DE LA CASETA.jpg"
+  },
+  {
+    "name": "DE LA COVA DETAIL",
+    "file": "images/DE LA COVA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA COVA",
+    "file": "images/DE LA COVA.jpg"
+  },
+  {
+    "name": "DE LA GALTA DETAIL",
+    "file": "images/DE LA GALTA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA GALTA",
+    "file": "images/DE LA GALTA.jpg"
+  },
+  {
+    "name": "DE LA GLORIA DETAIL",
+    "file": "images/DE LA GLORIA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA GLORIA",
+    "file": "images/DE LA GLORIA.jpg"
+  },
+  {
+    "name": "DE LA PENYA DETAIL",
+    "file": "images/DE LA PENYA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA PENYA",
+    "file": "images/DE LA PENYA.jpg"
+  },
+  {
+    "name": "DE LA PLATA CAMPANERA DETAIL",
+    "file": "images/DE LA PLATA CAMPANERA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA PLATA CAMPANERA",
+    "file": "images/DE LA PLATA CAMPANERA.jpg"
+  },
+  {
+    "name": "DE LA PLATA SAN JOAN DETAIL",
+    "file": "images/DE LA PLATA SAN JOAN DETAIL.JPG"
+  },
+  {
+    "name": "DE LA PLATA SAN JOAN",
+    "file": "images/DE LA PLATA SAN JOAN.jpg"
+  },
+  {
+    "name": "DE LA REINA DETAIL",
+    "file": "images/DE LA REINA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA REINA",
+    "file": "images/DE LA REINA.jpg"
+  },
+  {
+    "name": "DE LA ROCA DETAIL",
+    "file": "images/DE LA ROCA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA ROCA",
+    "file": "images/DE LA ROCA.jpg"
+  },
+  {
+    "name": "DE LA SENYALA SINEUERA DETAIL",
+    "file": "images/DE LA SENYALA SINEUERA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA SENYALA SINEUERA",
+    "file": "images/DE LA SENYALA SINEUERA.jpg"
+  },
+  {
+    "name": "DE LA SENYARA HIVERNENCA DETAIL",
+    "file": "images/DE LA SENYARA HIVERNENCA DETAIL.JPG"
+  },
+  {
+    "name": "DE LA SENYARA HIVERNENCA",
+    "file": "images/DE LA SENYARA HIVERNENCA.jpg"
+  },
+  {
+    "name": "DE LAGULLA DETAIL",
+    "file": "images/DE LAGULLA DETAIL.JPG"
+  },
+  {
+    "name": "DE LAGULLA",
+    "file": "images/DE LAGULLA.jpg"
+  },
+  {
+    "name": "DE LES OLLETES DETAIL",
+    "file": "images/DE LES OLLETES DETAIL.JPG"
+  },
+  {
+    "name": "DE LES OLLETES",
+    "file": "images/DE LES OLLETES.jpg"
+  },
+  {
+    "name": "DE LOFRE DETAIL",
+    "file": "images/DE LOFRE DETAIL.JPG"
+  },
+  {
+    "name": "DE LOFRE",
+    "file": "images/DE LOFRE.jpg"
+  },
+  {
+    "name": "DE NA PEROT DETAIL",
+    "file": "images/DE NA PEROT DETAIL.JPG"
+  },
+  {
+    "name": "DE NA PEROT",
+    "file": "images/DE NA PEROT.jpg"
+  },
+  {
+    "name": "DE NAMOROS DETAIL",
+    "file": "images/DE NAMOROS DETAIL.JPG"
+  },
+  {
+    "name": "DE NAMOROS",
+    "file": "images/DE NAMOROS.jpg"
+  },
+  {
+    "name": "DE SANT ANTONI DE JUNY DETAIL",
+    "file": "images/DE SANT ANTONI DE JUNY DETAIL.JPG"
+  },
+  {
+    "name": "DE SANT ANTONI DE JUNY",
+    "file": "images/DE SANT ANTONI DE JUNY.jpg"
+  },
+  {
+    "name": "DE SANT JOAN DE DEU DETAIL",
+    "file": "images/DE SANT JOAN DE DEU DETAIL.JPG"
+  },
+  {
+    "name": "DE SANT JOAN DE DEU",
+    "file": "images/DE SANT JOAN DE DEU.jpg"
+  },
+  {
+    "name": "DE SAVENC DETAIL",
+    "file": "images/DE SAVENC DETAIL.JPG"
+  },
+  {
+    "name": "DE SAVENC",
+    "file": "images/DE SAVENC.jpg"
+  },
+  {
+    "name": "DE SON QUARTERA DETAIL",
+    "file": "images/DE SON QUARTERA DETAIL.JPG"
+  },
+  {
+    "name": "DE SON QUARTERA",
+    "file": "images/DE SON QUARTERA.jpg"
+  },
+  {
+    "name": "DE TRES ESPLETS DETAIL",
+    "file": "images/DE TRES ESPLETS DETAIL.JPG"
+  },
+  {
+    "name": "DE TRES ESPLETS",
+    "file": "images/DE TRES ESPLETS.jpg"
+  },
+  {
+    "name": "DECA DETAIL",
+    "file": "images/DECA DETAIL.JPG"
   },
   {
     "name": "DECA",
     "file": "images/DECA.jpg"
   },
   {
-    "name": "DEe_PEREGRAN",
-    "file": "images/DEe_PEREGRAN.jpg"
+    "name": "DEL BISBE DETAIL",
+    "file": "images/DEL BISBE DETAIL.JPG"
   },
   {
-    "name": "DELS_ERMITANS",
-    "file": "images/DELS_ERMITANS.jpg"
+    "name": "DEL BISBE",
+    "file": "images/DEL BISBE.jpg"
   },
   {
-    "name": "DEL_BISBE",
-    "file": "images/DEL_BISBE.jpg"
+    "name": "DEL COR DETAIL",
+    "file": "images/DEL COR DETAIL.JPG"
   },
   {
-    "name": "DEL_COR",
-    "file": "images/DEL_COR.jpg"
+    "name": "DEL COR",
+    "file": "images/DEL COR.jpg"
   },
   {
-    "name": "DEL_SEN_JAUME_GRAN",
-    "file": "images/DEL_SEN_JAUME_GRAN.jpg"
+    "name": "DEL SEN JAUME GRAN DETAIL",
+    "file": "images/DEL SEN JAUME GRAN DETAIL.JPG"
   },
   {
-    "name": "DEn_BOTA",
-    "file": "images/DEn_BOTA.jpg"
+    "name": "DEL SEN JAUME GRAN",
+    "file": "images/DEL SEN JAUME GRAN.jpg"
   },
   {
-    "name": "DEn_CONQUET",
-    "file": "images/DEn_CONQUET.jpg"
+    "name": "DELS ERMITANS DETAIL",
+    "file": "images/DELS ERMITANS DETAIL.JPG"
   },
   {
-    "name": "DEn_JAUMA_PUNTA",
-    "file": "images/DEn_JAUMA_PUNTA.jpg"
+    "name": "DELS ERMITANS",
+    "file": "images/DELS ERMITANS.jpg"
   },
   {
-    "name": "DEN_MANEL",
-    "file": "images/DEN_MANEL.jpg"
+    "name": "DEN BOTA DETAIL",
+    "file": "images/DEN BOTA DETAIL.JPG"
   },
   {
-    "name": "DEn_MUNAR",
-    "file": "images/DEn_MUNAR.jpg"
+    "name": "DEN BOTA",
+    "file": "images/DEN BOTA.jpg"
   },
   {
-    "name": "DEn_PIERES",
-    "file": "images/DEn_PIERES.jpg"
+    "name": "DEN CONQUET DETAIL",
+    "file": "images/DEN CONQUET DETAIL.JPG"
   },
   {
-    "name": "DEn_VICENC_VAQUER",
-    "file": "images/DEn_VICENC_VAQUER.jpg"
+    "name": "DEN CONQUET",
+    "file": "images/DEN CONQUET.jpg"
   },
   {
-    "name": "DES_COS",
-    "file": "images/DES_COS.jpg"
+    "name": "DEN JAUMA PUNTA DETAIL",
+    "file": "images/DEN JAUMA PUNTA DETAIL.JPG"
   },
   {
-    "name": "DES_FAR",
-    "file": "images/DES_FAR.jpg"
+    "name": "DEN JAUMA PUNTA",
+    "file": "images/DEN JAUMA PUNTA.jpg"
   },
   {
-    "name": "DES_ROIG_MANYO",
-    "file": "images/DES_ROIG_MANYO.jpg"
+    "name": "DEN MANEL DETAIL",
+    "file": "images/DEN MANEL DETAIL.JPG"
   },
   {
-    "name": "DES_SOLDAT",
-    "file": "images/DES_SOLDAT.jpg"
+    "name": "DEN MANEL",
+    "file": "images/DEN MANEL.jpg"
   },
   {
-    "name": "DES_VICARI",
-    "file": "images/DES_VICARI.jpg"
+    "name": "DEN MUNAR DETAIL",
+    "file": "images/DEN MUNAR DETAIL.JPG"
   },
   {
-    "name": "DE_BOU",
-    "file": "images/DE_BOU.jpg"
+    "name": "DEN MUNAR",
+    "file": "images/DEN MUNAR.jpg"
   },
   {
-    "name": "DE_CABRERA",
-    "file": "images/DE_CABRERA.jpg"
+    "name": "DEN PEREGRAN DETAIL",
+    "file": "images/DEN PEREGRAN DETAIL.JPG"
   },
   {
-    "name": "DE_LAGULLA",
-    "file": "images/DE_LAGULLA.jpg"
+    "name": "DEN PEREGRAN",
+    "file": "images/DEN PEREGRAN.jpg"
   },
   {
-    "name": "DE_LA_CASETA",
-    "file": "images/DE_LA_CASETA.jpg"
+    "name": "DEN PIERES DETAIL",
+    "file": "images/DEN PIERES DETAIL.JPG"
   },
   {
-    "name": "DE_LA_COVA",
-    "file": "images/DE_LA_COVA.jpg"
+    "name": "DEN PIERES",
+    "file": "images/DEN PIERES.jpg"
   },
   {
-    "name": "DE_LA_GALTA",
-    "file": "images/DE_LA_GALTA.jpg"
+    "name": "DEN VICENC VAQUER DETAIL",
+    "file": "images/DEN VICENC VAQUER DETAIL.JPG"
   },
   {
-    "name": "DE_LA_GLORIA",
-    "file": "images/DE_LA_GLORIA.jpg"
+    "name": "DEN VICENC VAQUER",
+    "file": "images/DEN VICENC VAQUER.jpg"
   },
   {
-    "name": "DE_LA_PENYA",
-    "file": "images/DE_LA_PENYA.jpg"
+    "name": "DES COS  DETAIL",
+    "file": "images/DES COS  DETAIL.JPG"
   },
   {
-    "name": "DE_LA_PLATA_CAMPANERA",
-    "file": "images/DE_LA_PLATA_CAMPANERA.jpg"
+    "name": "DES COS",
+    "file": "images/DES COS.jpg"
   },
   {
-    "name": "DE_LA_PLATA_SAN_JOAN",
-    "file": "images/DE_LA_PLATA_SAN_JOAN.jpg"
+    "name": "DES FAR DETAIL",
+    "file": "images/DES FAR DETAIL.JPG"
   },
   {
-    "name": "DE_LA_RIENA",
-    "file": "images/DE_LA_RIENA.jpg"
+    "name": "DES FAR",
+    "file": "images/DES FAR.jpg"
   },
   {
-    "name": "DE_LA_ROCA",
-    "file": "images/DE_LA_ROCA.jpg"
+    "name": "DES ROIG MANYO DETAIL",
+    "file": "images/DES ROIG MANYO DETAIL.JPG"
   },
   {
-    "name": "DE_LA_SENYARA_HIVERNENCA",
-    "file": "images/DE_LA_SENYARA_HIVERNENCA.jpg"
+    "name": "DES ROIG MANYO",
+    "file": "images/DES ROIG MANYO.jpg"
   },
   {
-    "name": "DE_LA_SENYARA_SINEURA",
-    "file": "images/DE_LA_SENYARA_SINEURA.jpg"
+    "name": "DES SOLDAT DETAIL",
+    "file": "images/DES SOLDAT DETAIL.JPG"
   },
   {
-    "name": "DE_LES_OLLETES",
-    "file": "images/DE_LES_OLLETES.jpg"
+    "name": "DES SOLDAT",
+    "file": "images/DES SOLDAT.jpg"
   },
   {
-    "name": "DE_LOFRE",
-    "file": "images/DE_LOFRE.jpg"
+    "name": "DES VICARI DETAIL",
+    "file": "images/DES VICARI DETAIL.JPG"
   },
   {
-    "name": "DE_NAMOROS",
-    "file": "images/DE_NAMOROS.jpg"
+    "name": "DES VICARI",
+    "file": "images/DES VICARI.jpg"
   },
   {
-    "name": "DE_NA_PEROT",
-    "file": "images/DE_NA_PEROT.jpg"
-  },
-  {
-    "name": "DE_SANT_ANTONI_DE_JUNY",
-    "file": "images/DE_SANT_ANTONI_DE_JUNY.jpg"
-  },
-  {
-    "name": "DE_SANT_JOAN_DE_DEU",
-    "file": "images/DE_SANT_JOAN_DE_DEU.jpg"
-  },
-  {
-    "name": "DE_SAVENC",
-    "file": "images/DE_SAVENC.jpg"
-  },
-  {
-    "name": "DE_SON_QUARTERA",
-    "file": "images/DE_SON_QUARTERA.jpg"
-  },
-  {
-    "name": "DE_TRES_ESPLETS",
-    "file": "images/DE_TRES_ESPLETS.jpg"
+    "name": "DOLCA DETAIL",
+    "file": "images/DOLCA DETAIL.JPG"
   },
   {
     "name": "DOLCA",
     "file": "images/DOLCA.jpg"
   },
   {
-    "name": "FORSASTERA_DE_CAN_REVIU",
-    "file": "images/FORSASTERA_DE_CAN_REVIU.jpg"
+    "name": "FORSASTERA DE CAN REVIU DETAIL",
+    "file": "images/FORSASTERA DE CAN REVIU DETAIL.JPG"
+  },
+  {
+    "name": "FORSASTERA DE CAN REVIU",
+    "file": "images/FORSASTERA DE CAN REVIU.jpg"
+  },
+  {
+    "name": "GEGANTA DETAIL",
+    "file": "images/GEGANTA DETAIL.JPG"
   },
   {
     "name": "GEGANTA",
     "file": "images/GEGANTA.jpg"
   },
   {
-    "name": "GOTA_DE_MEL",
-    "file": "images/GOTA_DE_MEL.jpg"
+    "name": "GOTA DE MEL DETAIL",
+    "file": "images/GOTA DE MEL DETAIL.JPG"
+  },
+  {
+    "name": "GOTA DE MEL",
+    "file": "images/GOTA DE MEL.jpg"
+  },
+  {
+    "name": "GRANADINA DETAIL",
+    "file": "images/GRANADINA DETAIL.JPG"
   },
   {
     "name": "GRANADINA",
     "file": "images/GRANADINA.jpg"
   },
   {
-    "name": "GROGA_TARDANA",
-    "file": "images/GROGA_TARDANA.jpg"
+    "name": "GROGA TARDANA DETAIL",
+    "file": "images/GROGA TARDANA DETAIL.JPG"
   },
   {
-    "name": "HIVERNENCA_BLANCA",
-    "file": "images/HIVERNENCA_BLANCA.jpg"
+    "name": "GROGA TARDANA",
+    "file": "images/GROGA TARDANA.jpg"
   },
   {
-    "name": "HIVERNENCA_DE_SANT_SEBASTIA",
-    "file": "images/HIVERNENCA_DE_SANT_SEBASTIA.jpg"
+    "name": "HIVERNENCA BLANCA DETAIL",
+    "file": "images/HIVERNENCA BLANCA DETAIL.JPG"
+  },
+  {
+    "name": "HIVERNENCA BLANCA",
+    "file": "images/HIVERNENCA BLANCA.jpg"
+  },
+  {
+    "name": "HIVERNENCA DE SANT SEBASTIA DETAIL",
+    "file": "images/HIVERNENCA DE SANT SEBASTIA DETAIL.JPG"
+  },
+  {
+    "name": "HIVERNENCA DE SANT SEBASTIA",
+    "file": "images/HIVERNENCA DE SANT SEBASTIA.jpg"
+  },
+  {
+    "name": "HORTELLA DETAIL",
+    "file": "images/HORTELLA DETAIL.JPG"
   },
   {
     "name": "HORTELLA",
     "file": "images/HORTELLA.jpg"
   },
   {
+    "name": "JORBA DETAIL",
+    "file": "images/JORBA DETAIL.JPG"
+  },
+  {
     "name": "JORBA",
     "file": "images/JORBA.jpg"
+  },
+  {
+    "name": "LLIMONENCA DETAIL",
+    "file": "images/LLIMONENCA DETAIL.JPG"
   },
   {
     "name": "LLIMONENCA",
     "file": "images/LLIMONENCA.jpg"
   },
   {
+    "name": "LLORAL DETAIL",
+    "file": "images/LLORAL DETAIL.JPG"
+  },
+  {
     "name": "LLORAL",
     "file": "images/LLORAL.jpg"
+  },
+  {
+    "name": "MAELLA DETAIL",
+    "file": "images/MAELLA DETAIL.JPG"
   },
   {
     "name": "MAELLA",
     "file": "images/MAELLA.jpg"
   },
   {
+    "name": "MANRESA DETAIL",
+    "file": "images/MANRESA DETAIL.JPG"
+  },
+  {
+    "name": "MANRESA LLICMAJORERA DETAIL",
+    "file": "images/MANRESA LLICMAJORERA DETAIL.JPG"
+  },
+  {
+    "name": "MANRESA LLICMAJORERA",
+    "file": "images/MANRESA LLICMAJORERA.jpg"
+  },
+  {
     "name": "MANRESA",
     "file": "images/MANRESA.jpg"
   },
   {
-    "name": "MANRESA_LLICMAJORERA",
-    "file": "images/MANRESA_LLICMAJORERA.jpg"
+    "name": "MARE DE DEU DETAIL",
+    "file": "images/MARE DE DEU DETAIL.JPG"
   },
   {
-    "name": "MARE_DE_DEU",
-    "file": "images/MARE_DE_DEU.jpg"
+    "name": "MARE DE DEU",
+    "file": "images/MARE DE DEU.jpg"
   },
   {
-    "name": "MARTIN",
-    "file": "images/MARTIN.jpg"
+    "name": "MARTINA DETAIL",
+    "file": "images/MARTINA DETAIL.JPG"
   },
   {
     "name": "MARTINA",
     "file": "images/MARTINA.jpg"
   },
   {
-    "name": "MARTINECA",
-    "file": "images/MARTINECA.jpg"
+    "name": "MARTINECA BLANCA DETAIL",
+    "file": "images/MARTINECA BLANCA DETAIL.JPG"
   },
   {
-    "name": "MARTINECA_BLANCA",
-    "file": "images/MARTINECA_BLANCA.jpg"
+    "name": "MARTINECA BLANCA",
+    "file": "images/MARTINECA BLANCA.jpg"
   },
   {
-    "name": "MARTINENCA_DE_MiNER",
-    "file": "images/MARTINENCA_DE_MiNER.jpg"
+    "name": "MARTINENCA DE MINER DETAIL",
+    "file": "images/MARTINENCA DE MINER DETAIL.JPG"
+  },
+  {
+    "name": "MARTINENCA DE MINER",
+    "file": "images/MARTINENCA DE MINER.jpg"
+  },
+  {
+    "name": "MARTINENCA DETAIL",
+    "file": "images/MARTINENCA DETAIL.JPG"
+  },
+  {
+    "name": "MARTINENCA RIMADA DETAIL",
+    "file": "images/MARTINENCA RIMADA DETAIL.JPG"
+  },
+  {
+    "name": "MARTINENCA RIMADA",
+    "file": "images/MARTINENCA RIMADA.jpg"
+  },
+  {
+    "name": "MARTINENCA",
+    "file": "images/MARTINENCA.jpg"
+  },
+  {
+    "name": "MASCLENYA DETAIL",
+    "file": "images/MASCLENYA DETAIL.JPG"
   },
   {
     "name": "MASCLENYA",
     "file": "images/MASCLENYA.jpg"
   },
   {
+    "name": "MATASOLDATS DETAIL",
+    "file": "images/MATASOLDATS DETAIL.JPG"
+  },
+  {
     "name": "MATASOLDATS",
     "file": "images/MATASOLDATS.jpg"
   },
   {
-    "name": "MIG_PARATJAL",
-    "file": "images/MIG_PARATJAL.jpg"
+    "name": "MIG PARATJAL DETAIL",
+    "file": "images/MIG PARATJAL DETAIL.JPG"
+  },
+  {
+    "name": "MIG PARATJAL",
+    "file": "images/MIG PARATJAL.jpg"
+  },
+  {
+    "name": "MIRALLA DETAIL",
+    "file": "images/MIRALLA DETAIL.JPG"
   },
   {
     "name": "MIRALLA",
     "file": "images/MIRALLA.jpg"
   },
   {
+    "name": "MOELLADA DETAIL",
+    "file": "images/MOELLADA DETAIL.JPG"
+  },
+  {
     "name": "MOELLADA",
     "file": "images/MOELLADA.jpg"
   },
   {
-    "name": "MOLLA_VERMELLA",
-    "file": "images/MOLLA_VERMELLA.jpg"
+    "name": "MOLLA VERMELLA DETAIL",
+    "file": "images/MOLLA VERMELLA DETAIL.JPG"
+  },
+  {
+    "name": "MOLLA VERMELLA",
+    "file": "images/MOLLA VERMELLA.jpg"
+  },
+  {
+    "name": "MOLONDRA BLANCA DETAIL",
+    "file": "images/MOLONDRA BLANCA DETAIL.JPG"
+  },
+  {
+    "name": "MOLONDRA BLANCA",
+    "file": "images/MOLONDRA BLANCA.jpg"
+  },
+  {
+    "name": "MOLONDRA DETAIL",
+    "file": "images/MOLONDRA DETAIL.JPG"
   },
   {
     "name": "MOLONDRA",
     "file": "images/MOLONDRA.jpg"
   },
   {
-    "name": "MOLONDRA_BLANCA",
-    "file": "images/MOLONDRA_BLANCA.jpg"
+    "name": "MORISCA DETAIL",
+    "file": "images/MORISCA DETAIL.JPG"
   },
   {
     "name": "MORISCA",
     "file": "images/MORISCA.jpg"
   },
   {
-    "name": "NAPOLITANA_BLANCA",
-    "file": "images/NAPOLITANA_BLANCA.jpg"
+    "name": "MORRO DE BOU DETAIL",
+    "file": "images/MORRO DE BOU DETAIL.JPG"
   },
   {
-    "name": "NAPOLITANA_NEGRA",
-    "file": "images/NAPOLITANA_NEGRA.jpg"
+    "name": "NAPOLITANA BLANCA DETAIL",
+    "file": "images/NAPOLITANA BLANCA DETAIL.JPG"
   },
   {
-    "name": "NEGRA_PRIMERENCA",
-    "file": "images/NEGRA_PRIMERENCA.jpg"
+    "name": "NAPOLITANA BLANCA",
+    "file": "images/NAPOLITANA BLANCA.jpg"
+  },
+  {
+    "name": "NAPOLITANA NEGRA DETAIL",
+    "file": "images/NAPOLITANA NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "NAPOLITANA NEGRA",
+    "file": "images/NAPOLITANA NEGRA.jpg"
+  },
+  {
+    "name": "NEGRA PRIMERENCA DETAIL",
+    "file": "images/NEGRA PRIMERENCA DETAIL.JPG"
+  },
+  {
+    "name": "NEGRA PRIMERENCA",
+    "file": "images/NEGRA PRIMERENCA.jpg"
+  },
+  {
+    "name": "PARATJAL DETAIL",
+    "file": "images/PARATJAL DETAIL.JPG"
+  },
+  {
+    "name": "PARATJAL RIMADA DETAIL",
+    "file": "images/PARATJAL RIMADA DETAIL.JPG"
+  },
+  {
+    "name": "PARATJAL RIMADA",
+    "file": "images/PARATJAL RIMADA.jpg"
   },
   {
     "name": "PARATJAL",
     "file": "images/PARATJAL.jpg"
   },
   {
+    "name": "PARATJALINA DETAIL",
+    "file": "images/PARATJALINA DETAIL.JPG"
+  },
+  {
     "name": "PARATJALINA",
     "file": "images/PARATJALINA.jpg"
   },
   {
-    "name": "PARATJAL_RIMADA",
-    "file": "images/PARATJAL_RIMADA.jpg"
+    "name": "PEL DE BOU DETAIL",
+    "file": "images/PEL DE BOU DETAIL.JPG"
   },
   {
-    "name": "PEL_DE_BOU",
-    "file": "images/PEL_DE_BOU.jpg"
+    "name": "PEL DE BOU",
+    "file": "images/PEL DE BOU.jpg"
+  },
+  {
+    "name": "PLANERA DETAIL",
+    "file": "images/PLANERA DETAIL.JPG"
   },
   {
     "name": "PLANERA",
     "file": "images/PLANERA.jpg"
   },
   {
-    "name": "PORQUENCA_BLANCA",
-    "file": "images/PORQUENCA_BLANCA.jpg"
+    "name": "PORQUENCA BLANCA DETAIL",
+    "file": "images/PORQUENCA BLANCA DETAIL.JPG"
   },
   {
-    "name": "PORQUENCA_MASCLE",
-    "file": "images/PORQUENCA_MASCLE.jpg"
+    "name": "PORQUENCA BLANCA",
+    "file": "images/PORQUENCA BLANCA.jpg"
   },
   {
-    "name": "PORQUENCA_NEGRA",
-    "file": "images/PORQUENCA_NEGRA.jpg"
+    "name": "PORQUENCA MASCLE DETAIL",
+    "file": "images/PORQUENCA MASCLE DETAIL.JPG"
   },
   {
-    "name": "POTA_DE_CAVALL",
-    "file": "images/POTA_DE_CAVALL.jpg"
+    "name": "PORQUENCA MASCLE",
+    "file": "images/PORQUENCA MASCLE.jpg"
+  },
+  {
+    "name": "PORQUENCA NEGRA DETAIL",
+    "file": "images/PORQUENCA NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "PORQUENCA NEGRA",
+    "file": "images/PORQUENCA NEGRA.jpg"
+  },
+  {
+    "name": "POTA DE CAVALL DETAIL",
+    "file": "images/POTA DE CAVALL DETAIL.JPG"
+  },
+  {
+    "name": "POTA DE CAVALL",
+    "file": "images/POTA DE CAVALL.jpg"
+  },
+  {
+    "name": "RENYECA DETAIL",
+    "file": "images/RENYECA DETAIL.JPG"
   },
   {
     "name": "RENYECA",
     "file": "images/RENYECA.jpg"
   },
   {
+    "name": "ROGISCA DETAIL",
+    "file": "images/ROGISCA DETAIL.JPG"
+  },
+  {
     "name": "ROGISCA",
     "file": "images/ROGISCA.jpg"
+  },
+  {
+    "name": "ROJA DEN BARDINA DETAIL",
+    "file": "images/ROJA DEN BARDINA DETAIL.JPG"
+  },
+  {
+    "name": "ROJA DEN BARDINA",
+    "file": "images/ROJA DEN BARDINA.jpg"
+  },
+  {
+    "name": "ROJA DETAIL",
+    "file": "images/ROJA DETAIL.JPG"
   },
   {
     "name": "ROJA",
     "file": "images/ROJA.jpg"
   },
   {
-    "name": "ROJA_DEn_BARDINA",
-    "file": "images/ROJA_DEn_BARDINA.jpg"
+    "name": "SANTMARTINA DETAIL",
+    "file": "images/SANTMARTINA DETAIL.JPG"
   },
   {
     "name": "SANTMARTINA",
@@ -612,47 +1224,115 @@
     "file": "images/SARDA.jpg"
   },
   {
-    "name": "SET_COTNES",
-    "file": "images/SET_COTNES.jpg"
+    "name": "SET COTNES DETAIL",
+    "file": "images/SET COTNES DETAIL.JPG"
+  },
+  {
+    "name": "SET COTNES",
+    "file": "images/SET COTNES.jpg"
+  },
+  {
+    "name": "SITCELIS DETAIL",
+    "file": "images/SITCELIS DETAIL.JPG"
   },
   {
     "name": "SITCELIS",
     "file": "images/SITCELIS.jpg"
   },
   {
-    "name": "TIA_PENYA",
-    "file": "images/TIA_PENYA.jpg"
+    "name": "TIA PENYA DETAIL",
+    "file": "images/TIA PENYA DETAIL.JPG"
+  },
+  {
+    "name": "TIA PENYA",
+    "file": "images/TIA PENYA.jpg"
+  },
+  {
+    "name": "TOFOLA DETAIL",
+    "file": "images/TOFOLA DETAIL.JPG"
   },
   {
     "name": "TOFOLA",
     "file": "images/TOFOLA.jpg"
   },
   {
+    "name": "TURCA DETAIL",
+    "file": "images/TURCA DETAIL.JPG"
+  },
+  {
     "name": "TURCA",
     "file": "images/TURCA.jpg"
   },
   {
-    "name": "ULL_DE_PERDIU",
-    "file": "images/ULL_DE_PERDIU.jpg"
+    "name": "ULL DE PERDIU DETAIL",
+    "file": "images/ULL DE PERDIU DETAIL.JPG"
+  },
+  {
+    "name": "ULL DE PERDIU",
+    "file": "images/ULL DE PERDIU.jpg"
+  },
+  {
+    "name": "VACAL DETAIL",
+    "file": "images/VACAL DETAIL.JPG"
   },
   {
     "name": "VACAL",
     "file": "images/VACAL.jpg"
   },
   {
+    "name": "VERDAL DETAIL",
+    "file": "images/VERDAL DETAIL.JPG"
+  },
+  {
+    "name": "VERDAL NEGRA DETAIL",
+    "file": "images/VERDAL NEGRA DETAIL.JPG"
+  },
+  {
+    "name": "VERDAL NEGRA",
+    "file": "images/VERDAL NEGRA.jpg"
+  },
+  {
+    "name": "VERDAL SICILIANA DETAIL",
+    "file": "images/VERDAL SICILIANA DETAIL.JPG"
+  },
+  {
+    "name": "VERDAL SICILIANA",
+    "file": "images/VERDAL SICILIANA.jpg"
+  },
+  {
     "name": "VERDAL",
     "file": "images/VERDAL.jpg"
   },
   {
-    "name": "VERDAL_NEGRA",
-    "file": "images/VERDAL_NEGRA.jpg"
-  },
-  {
-    "name": "VERDAL_SICILIANA",
-    "file": "images/VERDAL_SICILIANA.jpg"
+    "name": "VICTORIA DETAIL",
+    "file": "images/VICTORIA DETAIL.JPG"
   },
   {
     "name": "VICTORIA",
     "file": "images/VICTORIA.jpg"
+  },
+  {
+    "name": "ปฏิทิน FIG TREE",
+    "file": "images/ปฏิทิน FIG TREE.JPG"
+  },
+  {
+    "name": "มะเดื่อฝรั่งทีขึ้นเองตามพื้นที่",
+    "file": "images/มะเดื่อฝรั่งทีขึ้นเองตามพื้นที่.JPG"
+  },
+  {
+    "name": "สายพันธุ์ที่ค้นพบใหม่",
+    "file": "images/สายพันธุ์ที่ค้นพบใหม่.JPG"
+  },
+  {
+    "name": "สายพันธุ์ที่นำเข้ามาใหม่",
+    "file": "images/สายพันธุ์ที่นำเข้ามาใหม่.JPG"
+  },
+  {
+    "name": "สายพันธุ์ที่ปรับปรุงแล้ว",
+    "file": "images/สายพันธุ์ที่ปรับปรุงแล้ว.JPG"
+  },
+  {
+    "name": "สายพันธุ์อื่นๆจากทั่วโลก",
+    "file": "images/สายพันธุ์อื่นๆจากทั่วโลก.JPG"
   }
 ]
