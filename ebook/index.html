@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook</title>
+    <title>Ebook Pro</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -17,18 +17,23 @@
 
 <body class="text-white p-4 max-w-3xl mx-auto">
 
-    <h1 class="text-2xl font-bold mb-2">📚 Fig Ebook</h1>
-    <p class="text-gray-400 mb-4">เลือกสายพันธุ์เพื่ออ่าน</p>
+    <h1 class="text-2xl font-bold mb-2">📚 Klangdoi Fig Ebook / สวนกลางดอยคลังความรู้ 📚</h1>
+    <p class="text-gray-400 mb-4">เลือกสายพันธุ์เพื่ออ่าน / ห้ามจำหน่ายเพื่อความรู้ฟรี</p>
 
     <input id="search" placeholder="ค้นหา..." class="w-full p-3 rounded-xl text-black mb-4" />
 
-    <!-- สารบัญ -->
+    <!-- 🔤 A-Z -->
+    <div id="az" class="flex flex-wrap gap-2 mb-4 text-sm"></div>
+
+    <!-- 📋 List -->
     <div id="list" class="space-y-2"></div>
 
-    <!-- Viewer -->
+    <!-- 📖 Viewer -->
     <div id="viewer" class="fixed inset-0 bg-black flex flex-col items-center justify-center hidden z-50">
 
         <button onclick="closeBook()" class="absolute top-4 right-4 text-white text-xl">✕</button>
+
+        <button onclick="toggleFav()" class="absolute top-4 left-4 text-yellow-400 text-xl">★</button>
 
         <img id="pageImg" class="max-w-full max-h-full object-contain transition-transform duration-200" />
 
@@ -43,28 +48,36 @@
 
     <script>
         let data = [], filtered = [];
+        let currentIndex = 0;
+        let zoom = 1;
+        let favs = JSON.parse(localStorage.getItem('favs') || '[]');
 
+        // -------- LOAD --------
         fetch('books.json')
             .then(r => r.json())
             .then(j => {
-                // 🔥 FIX: ใส่ id จริง
-                data = j.map((item, i) => ({
-                    ...item,
-                    id: i
-                }));
-
+                data = j.map((item, i) => ({ ...item, id: i }));
                 filtered = data;
+
+                renderAZ();
                 render();
+
+                // จำหน้าล่าสุด
+                let last = localStorage.getItem('lastPage');
+                if (last) {
+                    openBook(parseInt(last));
+                }
             });
 
+        // -------- RENDER --------
         function render() {
             let list = document.getElementById('list');
             list.innerHTML = '';
 
-            filtered.forEach((it) => {
+            filtered.forEach(it => {
                 list.innerHTML += `
       <div onclick="openBook(${it.id})"
-        class="p-3 bg-slate-800 rounded-xl cursor-pointer hover:bg-slate-700 transition flex">
+        class="p-3 bg-slate-800 rounded-xl cursor-pointer hover:bg-slate-700 flex">
         
         <span class="text-gray-400 w-10">${it.id + 1}.</span>
         <span class="flex-1">${it.name}</span>
@@ -73,11 +86,12 @@
             });
         }
 
+        // -------- SEARCH --------
         document.getElementById('search').oninput = e => {
             let q = e.target.value.toLowerCase().trim();
 
             if (q === '') {
-                filtered = data;  // แสดงทั้งหมดถ้าไม่พิมพ์
+                filtered = data;
             } else {
                 filtered = data.filter(x => {
                     let name = x.name.toLowerCase();
@@ -87,28 +101,50 @@
 
             render();
         }
+
+        // -------- A-Z --------
+        function renderAZ() {
+            let az = document.getElementById('az');
+            let letters = [...new Set(data.map(x => x.name[0].toUpperCase()))];
+
+            az.innerHTML = '<button onclick="resetAZ()" class="px-2 py-1 bg-gray-600 rounded">All</button>';
+
+            letters.forEach(l => {
+                az.innerHTML += `
+      <button onclick="filterAZ('${l}')"
+        class="px-2 py-1 bg-slate-700 rounded">${l}</button>
+    `;
+            });
+        }
+
+        function filterAZ(letter) {
+            filtered = data.filter(x => x.name[0].toUpperCase() === letter);
+            render();
+        }
+
+        function resetAZ() {
+            filtered = data;
+            render();
+        }
+
         // -------- VIEWER --------
-
-        let currentIndex = 0;
-        let zoom = 1;
-
         function openBook(index) {
             currentIndex = index;
             zoom = 1;
-
-            console.log("📖 OPEN:", currentIndex, data[currentIndex]);
 
             document.getElementById('viewer').classList.remove('hidden');
             showPage();
         }
 
         function showPage() {
-            const img = document.getElementById('pageImg');
+            let img = document.getElementById('pageImg');
             img.src = data[currentIndex].file;
             img.style.transform = `scale(${zoom})`;
 
             document.getElementById('pageNum').innerText =
-                (currentIndex + 1) + " / " + data.length;
+                (currentIndex + 1) + ' / ' + data.length;
+
+            localStorage.setItem('lastPage', currentIndex);
         }
 
         function nextPage() {
@@ -132,7 +168,6 @@
         }
 
         // -------- SWIPE --------
-
         let startX = 0;
         const img = document.getElementById('pageImg');
 
@@ -143,20 +178,25 @@
         img.addEventListener('touchend', e => {
             let endX = e.changedTouches[0].clientX;
 
-            if (startX - endX > 50) {
-                nextPage();
-            } else if (endX - startX > 50) {
-                prevPage();
-            }
+            if (startX - endX > 50) nextPage();
+            else if (endX - startX > 50) prevPage();
         });
 
         // -------- ZOOM --------
-
         img.addEventListener('click', () => {
             zoom = zoom === 1 ? 2 : 1;
             img.style.transform = `scale(${zoom})`;
         });
 
+        // -------- FAVORITE --------
+        function toggleFav() {
+            if (favs.includes(currentIndex)) {
+                favs = favs.filter(x => x !== currentIndex);
+            } else {
+                favs.push(currentIndex);
+            }
+            localStorage.setItem('favs', JSON.stringify(favs));
+        }
     </script>
 
 </body>
