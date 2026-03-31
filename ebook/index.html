@@ -7,16 +7,10 @@
     <title>Ebook</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/page-flip/dist/js/page-flip.browser.js"></script>
 
     <style>
         body {
             background: #0f172a;
-        }
-
-        #book {
-            width: 100%;
-            height: 100%;
         }
     </style>
 </head>
@@ -28,15 +22,17 @@
 
     <input id="search" placeholder="ค้นหา..." class="w-full p-3 rounded-xl text-black mb-4" />
 
-    <!-- ✅ สารบัญ -->
+    <!-- สารบัญ -->
     <div id="list" class="space-y-2"></div>
 
-    <!-- ✅ Ebook Viewer -->
+    <!-- Viewer -->
     <div id="viewer" class="fixed inset-0 bg-black flex flex-col items-center justify-center hidden z-50">
 
         <button onclick="closeBook()" class="absolute top-4 right-4 text-white text-xl">✕</button>
 
-        <img id="pageImg" class="max-w-full max-h-full object-contain" />
+        <img id="pageImg" class="max-w-full max-h-full object-contain transition-transform duration-200" />
+
+        <div id="pageNum" class="text-white mt-2"></div>
 
         <div class="absolute bottom-5 flex gap-4">
             <button onclick="prevPage()" class="bg-white text-black px-4 py-2 rounded">◀</button>
@@ -44,15 +40,20 @@
         </div>
 
     </div>
-    </div>
+
     <script>
         let data = [], filtered = [];
 
         fetch('books.json')
             .then(r => r.json())
             .then(j => {
-                data = j;
-                filtered = j;
+                // 🔥 FIX: ใส่ id จริง
+                data = j.map((item, i) => ({
+                    ...item,
+                    id: i
+                }));
+
+                filtered = data;
                 render();
             });
 
@@ -60,12 +61,12 @@
             let list = document.getElementById('list');
             list.innerHTML = '';
 
-            filtered.forEach((it, i) => {
+            filtered.forEach((it) => {
                 list.innerHTML += `
-      <div onclick="openBook(${i})"
+      <div onclick="openBook(${it.id})"
         class="p-3 bg-slate-800 rounded-xl cursor-pointer hover:bg-slate-700 transition flex">
         
-        <span class="text-gray-400 w-10">${i + 1}.</span>
+        <span class="text-gray-400 w-10">${it.id + 1}.</span>
         <span class="flex-1">${it.name}</span>
       </div>
     `;
@@ -73,20 +74,27 @@
         }
 
         document.getElementById('search').oninput = e => {
-            let q = e.target.value.toLowerCase();
+            let q = e.target.value.toLowerCase().trim();
 
-            filtered = data.filter(x =>
-                x.name.toLowerCase().includes(q)
-            );
+            if (q === '') {
+                filtered = data;  // แสดงทั้งหมดถ้าไม่พิมพ์
+            } else {
+                filtered = data.filter(x => {
+                    let name = x.name.toLowerCase();
+                    return name.startsWith(q) || name.split('-').some(w => w.startsWith(q));
+                });
+            }
 
             render();
         }
+        // -------- VIEWER --------
 
-        let flip;
         let currentIndex = 0;
+        let zoom = 1;
 
         function openBook(index) {
             currentIndex = index;
+            zoom = 1;
 
             console.log("📖 OPEN:", currentIndex, data[currentIndex]);
 
@@ -97,11 +105,16 @@
         function showPage() {
             const img = document.getElementById('pageImg');
             img.src = data[currentIndex].file;
+            img.style.transform = `scale(${zoom})`;
+
+            document.getElementById('pageNum').innerText =
+                (currentIndex + 1) + " / " + data.length;
         }
 
         function nextPage() {
             if (currentIndex < data.length - 1) {
                 currentIndex++;
+                zoom = 1;
                 showPage();
             }
         }
@@ -109,6 +122,7 @@
         function prevPage() {
             if (currentIndex > 0) {
                 currentIndex--;
+                zoom = 1;
                 showPage();
             }
         }
@@ -116,6 +130,32 @@
         function closeBook() {
             document.getElementById('viewer').classList.add('hidden');
         }
+
+        // -------- SWIPE --------
+
+        let startX = 0;
+        const img = document.getElementById('pageImg');
+
+        img.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+        });
+
+        img.addEventListener('touchend', e => {
+            let endX = e.changedTouches[0].clientX;
+
+            if (startX - endX > 50) {
+                nextPage();
+            } else if (endX - startX > 50) {
+                prevPage();
+            }
+        });
+
+        // -------- ZOOM --------
+
+        img.addEventListener('click', () => {
+            zoom = zoom === 1 ? 2 : 1;
+            img.style.transform = `scale(${zoom})`;
+        });
 
     </script>
 
