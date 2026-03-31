@@ -17,7 +17,7 @@
 
 <body class="text-white p-4 max-w-4xl mx-auto">
 
-    <h1 class="text-2xl font-bold mb-2">📚 Klangdoi Fig Ebook / สวนกลางดอยคลังความรู้</h1>
+    <h1 class="text-2xl font-bold mb-2">📚 Klangdoi Fig Ebook 📚</h1>
     <p class="text-gray-400 mb-4">เลือกสายพันธุ์เพื่ออ่าน / ห้ามจำหน่ายเพื่อความรู้ฟรี</p>
 
 
@@ -44,6 +44,47 @@
         </div>
 
     </div>
+
+    <div class="relative w-full max-w-5xl">
+
+        <!-- WATERMARK -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="text-white text-4xl md:text-5xl opacity-20 rotate-[-20deg] text-center leading-relaxed">
+                ห้ามจำหน่าย! เพื่อความรู้<br>
+                Klangdoi Garden
+            </div>
+        </div>
+
+        <!-- IMAGES -->
+        <div class="flex gap-2">
+            <img id="leftPage" class="w-1/2 object-contain bg-black" />
+            <img id="rightPage" class="w-1/2 object-contain bg-black" />
+        </div>
+
+    </div>
+
+    <div class="absolute inset-0 grid grid-cols-2 gap-4 opacity-10 pointer-events-none">
+        <div>ห้ามจำหน่าย! Klangdoi</div>
+        <div>เพื่อความรู้</div>
+        <div>Klangdoi Garden</div>
+        <div>ห้ามจำหน่าย</div>
+    </div>
+
+    <div
+        class="absolute inset-0 grid grid-cols-3 gap-4 opacity-10 pointer-events-none text-white text-sm rotate-[-25deg]">
+        <div>KLANGDOI GARDEN</div>
+        <div>ห้ามจำหน่าย</div>
+        <div>เพื่อความรู้</div>
+        <div>KLANGDOI GARDEN</div>
+        <div>ห้ามจำหน่าย</div>
+        <div>เพื่อความรู้</div>
+        <div>KLANGDOI GARDEN</div>
+        <div>ห้ามจำหน่าย</div>
+        <div>เพื่อความรู้</div>
+    </div>
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
 
     <script>
         let rawData = [], data = [], filtered = [];
@@ -151,6 +192,18 @@
         }
     </script>
 
+    <div
+        class="absolute inset-0 grid grid-cols-3 gap-4 opacity-10 pointer-events-none text-white text-sm rotate-[-25deg]">
+        <div>KLANGDOI GARDEN</div>
+        <div>ห้ามจำหน่าย</div>
+        <div>เพื่อความรู้</div>
+        <div>KLANGDOI GARDEN</div>
+        <div>ห้ามจำหน่าย</div>
+        <div>เพื่อความรู้</div>
+        <div>KLANGDOI GARDEN</div>
+        <div>ห้ามจำหน่าย</div>
+        <div>เพื่อความรู้</div>
+    </div>
 </body>
 
 </html>
